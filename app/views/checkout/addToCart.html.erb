@@ -1,0 +1,10 @@
+<h1>Checkout</h1>
+<p>
+  <%= form_tag(checkout_discountedTotal_path, :method => "get") do %>
+   <%= label_tag(:itemslist, "Enter all product codes") %>
+   <%= text_field_tag(:itemslist) %>
+   <%= submit_tag("Add To Cart") %>
+   <br>
+  	* Enter all products like (eg 001,002,003)
+  <% end %>
+</p>
